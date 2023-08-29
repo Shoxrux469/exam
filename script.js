@@ -1,6 +1,6 @@
 // ИСХОДНЫЕ ДАННЫЕ НЕ ТРОГАТЬ!*
 
-let discount = prompt('Какая скидка?')
+let discount = prompt('Какая скидка?')
 
 let totalSale = Number
 
@@ -97,14 +97,15 @@ const setup = () => {
         let a = item.price * discount / 100
         let b = item.price - a
         x.push(b)
-        // console.log(b);
+        // console.log(x);
     })
     arr_sale = x.slice()
     console.log(arr_sale); //5
 
 
-    let count = arr.length
-    average = total / count;
+    // let count = arr.length changed
+    // average = total / count; chenged
+    average = total / arr.length;
     console.log(average); // 6
 }
 
