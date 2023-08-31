@@ -96,7 +96,7 @@ const setup = () => {
     arr.forEach(item => {
         let a = item.price * discount / 100
         let b = item.price - a
-        x.push(b)
+        x.push(item)
         // console.log(x);
     })
     arr_sale = x.slice()
