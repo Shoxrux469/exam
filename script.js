@@ -92,19 +92,14 @@ const setup = () => {
     console.log(totalSale); // 4
 
 
-    let x = []
     arr.forEach(item => {
-        let a = item.price * discount / 100
-        let b = item.price - a
-        x.push(item)
-        // console.log(x);
+        let b = item.price - item.price * discount / 100
+        arr_sale.push({b, ...item})
     })
-    arr_sale = x.slice()
+    console.log(arr)
     console.log(arr_sale); //5
 
 
-    // let count = arr.length changed
-    // average = total / count; chenged
     average = total / arr.length;
     console.log(average); // 6
 }
