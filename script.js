@@ -93,8 +93,8 @@ const setup = () => {
 
 
     arr.forEach(item => {
-        let b = item.price - item.price * discount / 100
-        arr_sale.push({b, ...item})
+        let discountSale = item.price - item.price * discount / 100
+        arr_sale.push({discountSale, ...item})
     })
     console.log(arr)
     console.log(arr_sale); //5
